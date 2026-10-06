@@ -1,0 +1,3 @@
+ <?php $__env->startSection('content'); ?><div class="card"><h1>Tambah Buku</h1><?php if($errors->any()): ?><div class="error"><?php echo e($errors->first()); ?></div><?php endif; ?><form method="post" action="<?php echo e(route('books.store')); ?>"><?php echo $__env->make('books.form', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?></form></div><?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\p.web\uts_perpustakaan\uts_laudia_anjelina_09010282529070\resources\views/books/create.blade.php ENDPATH**/ ?>

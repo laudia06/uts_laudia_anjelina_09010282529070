@@ -1,0 +1,3 @@
+ <?php $__env->startSection('content'); ?><div class="card"><h1>Tambah Kategori</h1><form method="post" action="<?php echo e(route('categories.store')); ?>"><?php echo csrf_field(); ?><input name="name" placeholder="Nama kategori"><button>Simpan</button></form></div><?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\p.web\uts_perpustakaan\uts_laudia_anjelina_09010282529070\resources\views/categories/create.blade.php ENDPATH**/ ?>
