@@ -1,0 +1,1 @@
+@extends('layout') @section('content')<div class="card"><h1>Edit Buku</h1>@if($errors->any())<div class="error">{{$errors->first()}}</div>@endif<form method="post" action="{{route('books.update',$book)}}">@method('PUT') @include('books.form')</form></div>@endsection

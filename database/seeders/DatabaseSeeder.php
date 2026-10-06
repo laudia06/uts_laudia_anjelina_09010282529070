@@ -1,0 +1,4 @@
+<?php
+namespace Database\Seeders;
+use Illuminate\Database\Seeder; use App\Models\User; use App\Models\Category; use App\Models\Book;
+class DatabaseSeeder extends Seeder {public function run():void{$cats=[];foreach(['Fiksi','Teknologi','Pendidikan'] as $n)$cats[$n]=Category::create(['name'=>$n]);User::create(['name'=>'Laudia ANJELINA','email'=>'admin@perpustakaan.test','password'=>'password']);foreach([['Belajar Laravel','Andi','Informatika','2025',5,'Teknologi'],['Pemrograman Web','Budi','Media Kita','2024',4,'Teknologi'],['Dasar-Dasar Pendidikan','Citra','Edukasi Press','2023',3,'Pendidikan'],['Laskar Pelangi','Andrea Hirata','Bentang','2005',6,'Fiksi'],['Bumi Manusia','Pramoedya Ananta Toer','Lentera','1980',2,'Fiksi']] as $b)Book::create(['title'=>$b[0],'author'=>$b[1],'publisher'=>$b[2],'year'=>$b[3],'stock'=>$b[4],'category_id'=>$cats[$b[5]]->id]);}}

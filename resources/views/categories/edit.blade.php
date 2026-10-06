@@ -1,0 +1,1 @@
+@extends('layout') @section('content')<div class="card"><h1>Edit Kategori</h1><form method="post" action="{{route('categories.update',$category)}}">@csrf @method('PUT')<input name="name" value="{{$category->name}}"><button>Simpan</button></form></div>@endsection

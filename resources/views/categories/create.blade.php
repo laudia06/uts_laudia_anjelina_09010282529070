@@ -1,0 +1,1 @@
+@extends('layout') @section('content')<div class="card"><h1>Tambah Kategori</h1><form method="post" action="{{route('categories.store')}}">@csrf<input name="name" placeholder="Nama kategori"><button>Simpan</button></form></div>@endsection
